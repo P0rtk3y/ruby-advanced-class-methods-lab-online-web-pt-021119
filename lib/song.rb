@@ -43,7 +43,9 @@ class Song
   end 
   
   def self.new_from_filename(filename)
-    binding.pry
+    new_format = filename.split(" - ")
+    artist = new_format.first 
+    name = new_format.last.chomp(".mp3")
   end 
 end
 
