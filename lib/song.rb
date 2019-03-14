@@ -46,6 +46,8 @@ class Song
     new_format = filename.split(" - ")
     artist = new_format.first 
     name = new_format.last.chomp(".mp3")
+    
+    
   end 
 end
 
