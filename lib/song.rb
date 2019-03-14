@@ -12,10 +12,13 @@ class Song
     self.class.all << self
   end
   
-  def self.create
+  def self.create(name) 
+    @name = name
+    self.all << name 
     
   end 
 end
 
 song = Song.create 
+song.save 
 Song.all.include?(song)
