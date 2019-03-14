@@ -47,7 +47,10 @@ class Song
     artist = new_format.first 
     name = new_format.last.chomp(".mp3")
     
-    
+    song = self.new 
+    song.name = name 
+    song.artist = artist 
+    song 
   end 
 end
 
