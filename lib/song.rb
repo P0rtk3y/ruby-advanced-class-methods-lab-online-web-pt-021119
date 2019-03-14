@@ -40,6 +40,7 @@ class Song
     else 
       self
     end 
+    binding.pry
   end 
 end
 
