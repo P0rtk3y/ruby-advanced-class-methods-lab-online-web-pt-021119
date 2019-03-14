@@ -12,12 +12,12 @@ class Song
     self.class.all << self
   end
   
-  def self.create 
-    @name = name 
-    self.all << name 
-    
+  def self.create
+    song = self.new 
+    self.all << song if !self.all.include?(song)
+    puts song 
   end 
+  
 end
 
-song = Song.create 
-Song.all.include?(song)
+
