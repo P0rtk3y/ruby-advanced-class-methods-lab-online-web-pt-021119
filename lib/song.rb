@@ -52,6 +52,10 @@ class Song
     song.artist_name = artist 
     song 
   end 
+  
+  def self.create_from_filename(filename)
+    binding.pry
+  end 
 end
 
 
